@@ -1321,7 +1321,7 @@
       
     }
     .main{
-      max-width: 800px;
+      max-width: 600px;
       margin: 2rem auto;
       padding: 0 1rem;
     }
@@ -1348,7 +1348,8 @@
     }
     .content img {
       width: 100%;
-      height: auto;
+      height: 300px;
+      object-fit: contain;
       display: block;
       margin-bottom: 1rem;
       border-radius: 8px;
@@ -1358,6 +1359,11 @@
       margin-top: 0;
       color: #e8f5e0;
     }
+    .description{
+      max-height: 200px;
+      overflow-y: scroll;
+      scrollbar-width: none;
+    }
     .content blockquote{
       font-size: 16px;
       font-style: italic;
@@ -1366,6 +1372,7 @@
     .content p, .content ul li, .content ol li{
       font-size:18px;
       color: #e8f5e0;
+      margin-bottom: 10px;
     }
     .content ul {
       padding-left: 1.2rem;
@@ -1380,10 +1387,29 @@
   <div class="main">
     <!-- First Family Entry -->
     <details>
-      <summary>The First of many..............Alawo's Courageous Pursuit</summary>
+      <summary>Pay It Forward -- The Beginning</summary>
+      <div class="content">
+        <!-- Placeholder image; replace src with actual path -->
+        <img src="https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?_gl=1*1nll9i8*_ga*OTgwMTk1MTQ4LjE3NTI3NTM4Mjk.*_ga_8JE65Q40S6*czE3NTI3NTM4MjkkbzEkZzEkdDE3NTI3NTQxMTQkajU5JGwwJGgw" alt="Alawo and his children">
+        <div class="description">
+          <p>In <strong>January 2025</strong>, we met someone who changed everything.</p>
+  
+          <p>He came to us for help—but inspired us into action. An accomplished intellectual, a devoted father of four, and someone with a warm, magnetic spirit. When he shared his story, we knew we couldn’t simply prepare documents—we had to do more.</p>
+        
+          <p>We offered him free immigration document preparation. As we learned more about his life and family, we felt moved to send a care package to his children—filled with small comforts like toys, clothes, and treats to bring a little joy across the miles.</p>
+          <p>Then something unexpected happened. When we shared his story with a few friends, the response was overwhelming—everyone wanted to help. They wanted to send gifts, show support, and give comfort to families going through similar transitions. <br> <strong> That was the moment the Pay It Forward Program was born.</strong></p>
+        </div>
+      </div>
+    </details>
+  </div>
+  <div class="main">
+    <!-- First Family Entry -->
+    <details>
+      <summary>The First of many -- Alawo's Courageous Pursuit</summary>
       <div class="content">
         <!-- Placeholder image; replace src with actual path -->
         <img src="https://focus.belfasttelegraph.co.uk/thumbor/YqRVkKQpf1lFl-XFrx0DJ7UgoUM=/8x0:5787x3853/960x640/prod-mh-ireland/70511751-a02a-4897-bbc2-ddad0a2c40de/c8d3795a-9e5b-456f-844a-0bdeb562f59d/dfamilyTheJAQGroup.jpg" alt="Alawo and his children">
+        <div class="description">
         <p><strong>Alawo</strong> is a humble yet educated man who left everything behind to come to the U.S.—not for himself, but to build a better future for his wife and their four children still living abroad.</p>
         <p>Holding a degree and a promise, he embarked on a journey fueled by hope, perseverance, and unwavering determination to become an asset to his new country.</p>
 
@@ -1408,6 +1434,7 @@
         <p>Do you know someone just like Alawo? Would you like to make a difference? Migrant family support and encouragement to one of our families is available. If so, send us a message to <a href="mailto:Info@ProjectGreenCards.com">Info@ProjectGreenCards.com</a>.</p>
 
         <p>This is more than immigration Document Preparation—it's the forging of new connections, roots, and lifelines. Through the <span class="green-word">Project Green Cards</span> “PIF” program, a ripple of hope begins and the next act of generosity follows. One family's hope becomes another's opportunity to show love and kindness.</p>
+                </div>
       </div>
     </details>
   </div>
