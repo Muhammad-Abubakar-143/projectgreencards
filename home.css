@@ -24,6 +24,16 @@
     color: white !important;
     border-radius: 50px !important;
 }
+.button-outline-green{
+    background-color: transparent !important;
+    color: #52775c !important;
+    border: 1px solid #52775c !important;
+    border-radius: 50px !important;
+}
+.button-outline-green:hover{
+    color: white !important;
+    background-color:#52775c !important;
+}
 .button-green:hover{
     background-color:#618741 !important;
 }
@@ -38,3 +48,25 @@
     color: white !important;
     font-weight: 600;
 }
+
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  border: none;
+  border-bottom: 2px solid rgb(128, 126, 126);
+  background: transparent;
+  outline: none;
+  width: 100%;
+  text-transform: capitalize;
+  padding: 1rem 0.4rem;
+}
+.aside {
+  background: #52775c;
+  background-size: 400%;
+}
+
+
