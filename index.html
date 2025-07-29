@@ -42,6 +42,57 @@
     
   </head>
   <body>
+    <div
+    class="modal fade"
+    id="consentModal"
+    tabindex="-1"
+    aria-labelledby="consentModalLabel"
+    aria-hidden="true"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="consentModalLabel">Please Agree</h5>
+        </div>
+        <div class="modal-body">
+          <p>
+            We are not attorneys and are not licensed to practice law. We cannot provide legal advice or represent you in immigration proceedings.
+            We offer document preparation services based on the information you provide. For legal advice, please consult a licensed immigration attorney.
+            <br>To proceed, please confirm that you have read and agree to our terms.
+          </p>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value=""
+              id="agreeCheckbox"
+            >
+            <label class="form-check-label" for="agreeCheckbox">
+              I understand that Project Green Cards LLC is not a law firm, and no attorney-client relationship is formed. I will not receive legal advice or representation.
+            </label>
+          </div>
+          <div
+            id="errorText"
+            class="text-danger mt-2"
+            style="display: none;"
+          >
+            Please check the checkbox to proceed.
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            id="proceedBtn"
+            class="btn button-green px-4"
+          >
+            Proceed
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg py-3 bg-body-light shadow-sm">
       <div class="container d-flex justify-content-between">
@@ -341,36 +392,6 @@
 <script src="https://static.elfsight.com/platform/platform.js" async></script>
 <div class="elfsight-app-52046e17-0aaf-4eb8-851c-0211cea2703a" data-elfsight-app-lazy></div>
         </div>
-    <!-- <div class="col">
-      <div class="rounded-3 border-green h-100 p-3 d-flex justify-content-center align-items-baseline flex-column" >
-        <p class="text-green fs-5 mb-5 fw-semibold">"Thank you so much for helping me with my green card application!"</p>
-        <p class="text-green fs-5 fw-semibold mb-0">Carlos M.
-          <br>
-          Client Review
-          
-                </p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="rounded-3 border-green h-100 p-3 d-flex justify-content-center align-items-baseline flex-column">
-        <p class="text-green fs-5 mb-5 fw-semibold">"The paralegal team at Project Green Cards made my EB2-NIW application simple and efficient. I got approved quickly!"</p>
-        <p class="text-green fs-5 fw-semibold mb-0">
-          Sarah K.
-          <br>
-          Client Review
-        </p>
-      </div>
-    </div>
-    <div class="col">
-      <div class="rounded-3 border-green h-100 p-3  d-flex justify-content-center align-items-baseline flex-column">
-        <p class="text-green fs-5 mb-5 fw-semibold">"Thanks to Christina, my adjustment of status process was smooth. Their support was outstanding!"</p>
-        <p class="text-green fs-5 fw-semibold mb-0">
-          Raj P.
-          <br>
-          Client Review
-        </p>
-      </div>
-    </div> -->
   </div>
 
       </div>
@@ -379,116 +400,6 @@
       </div>
 
      </div>
-
-
-
-
-     <!-- <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-     <div class="card-group">
-      <div class="card">
-       <img src="..." class="card-img-top" alt="...">
-       <div class="card-body">
-       <h5 class="card-title">Card title</h5>
-       <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-
-    </div>
-    <div class="carousel-item">
-<div class="card-group">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-
-    </div>
-    <div class="carousel-item">
-  
-
-<div class="card-group">
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-  <div class="card">
-    <img src="..." class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> -->
-
 
 <!-- about us -->
     <div class="container-fluid">
@@ -568,5 +479,27 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // Show the modal immediately on page load
+      var consentModal = new bootstrap.Modal(document.getElementById('consentModal'));
+      consentModal.show();
+
+      var checkbox = document.getElementById('agreeCheckbox');
+      var proceedBtn = document.getElementById('proceedBtn');
+      var errorText = document.getElementById('errorText');
+
+      proceedBtn.addEventListener('click', function () {
+        if (!checkbox.checked) {
+          // Show error if not checked
+          errorText.style.display = 'block';
+        } else {
+          // Hide error (if previously shown) and close modal
+          errorText.style.display = 'none';
+          consentModal.hide();
+        }
+      });
+    });
+  </script>
   </body>
 </html>
