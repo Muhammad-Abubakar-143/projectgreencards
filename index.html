@@ -43,59 +43,9 @@
     
   </head>
   <body>
-    <div
-    class="modal fade"
-    id="consentModal"
-    tabindex="-1"
-    aria-labelledby="consentModalLabel"
-    aria-hidden="true"
-    data-bs-backdrop="static"
-    data-bs-keyboard="false"
-  >
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="consentModalLabel">Please Agree</h5>
-        </div>
-        <div class="modal-body">
-          <p>
-            We are not attorneys and are not licensed to practice law. We cannot provide legal advice or represent you in immigration proceedings.
-            We offer document preparation services based on the information you provide. For legal advice, please consult a licensed immigration attorney.
-            <br>To proceed, please confirm that you have read and agree to our terms.
-          </p>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="checkbox"
-              value=""
-              id="agreeCheckbox"
-            >
-            <label class="form-check-label" for="agreeCheckbox">
-              I understand that Project Green Cards LLC is not a law firm, and no attorney-client relationship is formed. I will not receive legal advice or representation.
-            </label>
-          </div>
-          <div
-            id="errorText"
-            class="text-danger mt-2"
-            style="display: none;"
-          >
-            Please check the checkbox to proceed.
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button
-            type="button"
-            id="proceedBtn"
-            class="btn button-green px-4"
-          >
-            Proceed
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
+
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg py-3 bg-green-light shadow-sm">
+     <nav class="navbar navbar-expand-lg py-3 bg-green-light shadow-sm">
       <div class="container d-flex justify-content-between">
         <a class="navbar-brand" href="index.html">
           <img
@@ -114,7 +64,7 @@
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon text-light"></span>
+          <span class="navbar-toggler-icon"></span>
         </button>
         <div
           class="collapse navbar-collapse justify-content-end"
@@ -123,14 +73,11 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a
-                class="nav-link text-light active link-underline-dark fw-semibold"
+                class="nav-link text-light active fw-semibold "
                 aria-current="page"
                 href="index.html"
                 >Home</a
               >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-light" href="pay-it-forward.html">Pay It Forward</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-light" href="services.html">Services</a>
@@ -138,11 +85,16 @@
             <li class="nav-item">
               <a class="nav-link text-light" href="contact.html">Contact</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link text-light"  href="pay-it-forward.html">Pay It Forward</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light"  href="disclaimer.html">Disclaimer</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
-
     <!-- hero section -->
     <div class="container-fluid background-image">
       <div class="container col-xxl-8 px-4 py-5">
@@ -445,9 +397,9 @@
           <h3 class="text-light mb-5">Helpful Links</h3>
           <ul class="list-unstyled">
             <li class="mb-3 text-light"><a class="text-light fw-semibold text-decoration-none" href="index.html">Home</a></li>
-            <li class="mb-3 text-light"><a class="text-light fw-semibold text-decoration-none" href="pay-it-forward.html">Pay It Forward</a></li>
             <li class="mb-3 text-light"><a class="text-light fw-semibold text-decoration-none" href="services.html">Services</a></li>
-            <li class="mb-0 text-light"><a class="text-light fw-semibold text-decoration-none" href="contact.html">Contact Us</a></li>
+            <li class="mb-3 text-light"><a class="text-light fw-semibold text-decoration-none" href="contact.html">Contact Us</a></li>
+            <li class="mb-0 text-light"><a class="text-light fw-semibold text-decoration-none" href="pay-it-forward.html">Pay It Forward</a></li>
           </ul>
         </div>
         <div class="col">
